@@ -1,7 +1,7 @@
 {
   "name": "LiveSDKAPP",
-  "version": "0.1.0",
-  "summary": "A short description of LiveSDKAPP.",
+  "version": "0.1.1",
+  "summary": "藐视",
   "description": "LiveSDKAPP",
   "homepage": "https://github.com/bonesName/LiveSDKAPP",
   "license": {
@@ -13,17 +13,22 @@
   },
   "source": {
     "git": "https://github.com/bonesName/LiveSDKAPP.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "LiveSDKAPP/Classes/**/*.{h,m}",
+  "vendored_frameworks": "LiveSDKAPP/Classes/*.framework",
   "frameworks": [
     "UIKit",
     "CoreLocation",
     "Foundation"
   ],
+  "resource_bundles": {
+    "LiveSDKIcon": [
+      "LiveSDKIcon/*.png"
+    ]
+  },
   "dependencies": {
     "AFNetworking": [
 
