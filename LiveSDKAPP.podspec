@@ -33,18 +33,21 @@ Pod::Spec.new do |s|
   #自己的逻辑代码
 #  s.source_files  = "LiveSDKAPP/LiveSDKAPP/Classes/**/*"
 #  s.source_files  = "LiveSDKAPP/Classes/**/*"
-#  #依赖自己的或别人的Framework文件/Users/bones/LiveSDKAPP/LiveSDKAPP/Classes/LiveSDK.framework
-  s.vendored_frameworks = 'LiveSDKAPP/Classes/*.framework'
-#  s.vendored_frameworks = 'Classes/*.framewocdrk'
+#  #依赖自己的或别人的Framework文件
+#  s.vendored_frameworks = 'LiveSDKAPP/Classes/*.framework'
+ 
 #s.source_files = 'LiveSDKAPP/Classes/LiveSDK.framework/Headers/*.{h}'；
 #    s.source_files  = "LiveSDKAPP/**/*"/Users/bones/LiveSDKAPP/LiveSDKAPP/Classes/LiveSDK.framework
  
-   #系统依赖库
-   s.frameworks = 'UIKit', 'CoreLocation','Foundation'
-#
-   s.resource_bundles = {
-     'LiveSDKIcon' => ['LiveSDKIcon/*.png']
-   }
+   #系统依赖库/Users/bones/LiveSDKAPP/LiveSDKAPP/Classes/LiveSDK.framework/Users/bones/LiveSDKAPP/LiveSDK.framework
+   s.frameworks     = 'UIKit', 'CoreLocation','Foundation'
+   s.resources      = "LiveSDKAPP/Classes/LiveSDKIcon.bundle"
+#   s.vendored_frameworks = 'LiveSDKAPP/Classes/LiveSDK.framework'
+
+
+#   s.resource_bundles = {
+#     'LiveSDKIcon' => ['LiveSDKIcon/*.png']
+#   }
    s.dependency 'AFNetworking'
    s.dependency 'SDWebImage'
    s.dependency 'MJRefresh'

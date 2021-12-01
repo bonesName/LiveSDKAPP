@@ -18,17 +18,13 @@
   "platforms": {
     "ios": "9.0"
   },
-  "vendored_frameworks": "LiveSDKAPP/Classes/*.framework",
+  "vendored_frameworks": "LiveSDKAPP/Classes/LiveSDK.framework",
   "frameworks": [
     "UIKit",
     "CoreLocation",
     "Foundation"
   ],
-  "resource_bundles": {
-    "LiveSDKIcon": [
-      "LiveSDKIcon/*.png"
-    ]
-  },
+  "resources": "LiveSDKAPP/Classes/LiveSDKIcon.bundle",
   "dependencies": {
     "AFNetworking": [
 
