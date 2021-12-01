@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/bonesName/LiveSDKAPP.git",
-    "tag": "v0.1.0"
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "TestSDK/Classes/**/*.{h,m}",
+  "source_files": "LiveSDKAPP/Classes/**/*.{h,m}",
   "frameworks": [
     "UIKit",
     "CoreLocation",

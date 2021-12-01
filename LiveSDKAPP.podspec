@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LiveSDKAPP'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of LiveSDKAPP.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   #自己的逻辑代码
-  s.source_files  = "LiveSDKAPP/Classes/**/*.{h,m}"
+  s.source_files  = "LiveSDKAPP/Classes/**/*"
+#  s.source_files  = "LiveSDKAPP/Classes/**/*.{h,m}"
 #  #依赖自己的或别人的Framework文件
 #  s.vendored_frameworks = 'LiveSDKAPP/Classes/*.framework'
    #系统依赖库
