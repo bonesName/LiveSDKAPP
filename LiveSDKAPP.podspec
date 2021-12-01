@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LiveSDKAPP'
   s.version          = '0.1.1'
-  s.summary          = 'A short description of LiveSDKAPP.'
+  s.summary          = '藐视'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,16 +31,20 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   #自己的逻辑代码
-  s.source_files  = "LiveSDKAPP/Classes/**/*"
-#  s.source_files  = "LiveSDKAPP/Classes/**/*.{h,m}"
-#  #依赖自己的或别人的Framework文件
-#  s.vendored_frameworks = 'LiveSDKAPP/Classes/*.framework'
+#  s.source_files  = "LiveSDKAPP/LiveSDKAPP/Classes/**/*"
+#  s.source_files  = "LiveSDKAPP/Classes/**/*"
+#  #依赖自己的或别人的Framework文件/Users/bones/LiveSDKAPP/LiveSDKAPP/Classes/LiveSDK.framework
+  s.vendored_frameworks = 'LiveSDKAPP/Classes/*.framework'
+#  s.vendored_frameworks = 'Classes/*.framewocdrk'
+#s.source_files = 'LiveSDKAPP/Classes/LiveSDK.framework/Headers/*.{h}'；
+#    s.source_files  = "LiveSDKAPP/**/*"/Users/bones/LiveSDKAPP/LiveSDKAPP/Classes/LiveSDK.framework
+ 
    #系统依赖库
    s.frameworks = 'UIKit', 'CoreLocation','Foundation'
 #
-#   s.resource_bundles = {
-#     'LiveSDKIcon' => ['LiveSDKIcon/*.png']
-#   }
+   s.resource_bundles = {
+     'LiveSDKIcon' => ['LiveSDKIcon/*.png']
+   }
    s.dependency 'AFNetworking'
    s.dependency 'SDWebImage'
    s.dependency 'MJRefresh'
