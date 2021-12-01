@@ -25,15 +25,15 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bonesName' => 'Bones@88tech.net' }
-  s.source           = { :git => 'https://github.com/bonesName/LiveSDKAPP.git', :tag => 'v0.1.0' }
+  s.source           = { :git => 'https://github.com/bonesName/LiveSDKAPP.git', :tag => s.version.to_s  }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   #自己的逻辑代码
-  s.source_files  = "TestSDK/Classes/**/*.{h,m}"
+  s.source_files  = "LiveSDKAPP/Classes/**/*.{h,m}"
 #  #依赖自己的或别人的Framework文件
-#  s.vendored_frameworks = 'TestSDK/Classes/*.framework'
+#  s.vendored_frameworks = 'LiveSDKAPP/Classes/*.framework'
    #系统依赖库
    s.frameworks = 'UIKit', 'CoreLocation','Foundation'
 #
