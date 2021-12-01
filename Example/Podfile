@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LiveSDKAPP_Example' do
+  pod 'LiveSDKAPP', :path => '../'
+
+  target 'LiveSDKAPP_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
