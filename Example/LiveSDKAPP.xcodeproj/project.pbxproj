@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A0C9D55707E4621A246D2D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		36B66BCD368BCA3DC5A178A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0A0C9D55707E4621A246D2D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		36B66BCD368BCA3DC5A178A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		38D4D0E90A350F193A1FCA59 /* Pods-LiveSDKAPP_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveSDKAPP_Example.debug.xcconfig"; path = "Target Support Files/Pods-LiveSDKAPP_Example/Pods-LiveSDKAPP_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LiveSDKAPP_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveSDKAPP_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		AC3A8A9BCCF672AF0080FA9F /* Pods_LiveSDKAPP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveSDKAPP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8C1AE13C631231E110C488 /* Pods-LiveSDKAPP_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveSDKAPP_Example.release.xcconfig"; path = "Target Support Files/Pods-LiveSDKAPP_Example/Pods-LiveSDKAPP_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C5D3D462A230958ED6D2B3FE /* Pods_LiveSDKAPP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveSDKAPP_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D082F8298B1BA6EA19B8DE78 /* LiveSDKAPP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LiveSDKAPP.podspec; path = ../LiveSDKAPP.podspec; sourceTree = "<group>"; };
+		D082F8298B1BA6EA19B8DE78 /* LiveSDKAPP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LiveSDKAPP.podspec; path = ../LiveSDKAPP.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DCB9643AB802E5256C344A96 /* Pods-LiveSDKAPP_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveSDKAPP_Tests.release.xcconfig"; path = "Target Support Files/Pods-LiveSDKAPP_Tests/Pods-LiveSDKAPP_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EEDB3F695D915D8599B31175 /* Pods-LiveSDKAPP_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveSDKAPP_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LiveSDKAPP_Tests/Pods-LiveSDKAPP_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				EEDB3F695D915D8599B31175 /* Pods-LiveSDKAPP_Tests.debug.xcconfig */,
 				DCB9643AB802E5256C344A96 /* Pods-LiveSDKAPP_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,11 +324,29 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LiveSDKAPP_Example/Pods-LiveSDKAPP_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LiveSDKAPP/LiveSDKAPP.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/CWStatusBarNotification/CWStatusBarNotification.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/QBImagePickerController/QBImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TXIMSDK_iOS/ImSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LiveSDKAPP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CWStatusBarNotification.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QBImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

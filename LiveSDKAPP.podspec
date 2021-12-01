@@ -18,19 +18,39 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                       LiveSDKAPP
                        DESC
 
   s.homepage         = 'https://github.com/bonesName/LiveSDKAPP'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'bonesName' => 'Bones@qqc88.net' }
-  s.source           = { :git => 'https://github.com/bonesName/LiveSDKAPP.git', :tag => s.version.to_s }
+  s.author           = { 'bonesName' => 'Bones@88tech.net' }
+  s.source           = { :git => 'https://github.com/bonesName/LiveSDKAPP.git', :tag => 'v0.1.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LiveSDKAPP/Classes/**/*'
+  #自己的逻辑代码
+  s.source_files  = "TestSDK/Classes/**/*.{h,m}"
+#  #依赖自己的或别人的Framework文件
+#  s.vendored_frameworks = 'TestSDK/Classes/*.framework'
+   #系统依赖库
+   s.frameworks = 'UIKit', 'CoreLocation','Foundation'
+#
+#   s.resource_bundles = {
+#     'LiveSDKIcon' => ['LiveSDKIcon/*.png']
+#   }
+   s.dependency 'AFNetworking'
+   s.dependency 'SDWebImage'
+   s.dependency 'MJRefresh'
+   s.dependency 'MJExtension'
+   s.dependency 'Masonry'
+   s.dependency 'MBProgressHUD', '~> 0.9.2'
+   s.dependency 'BlocksKit'
+   s.dependency 'QBImagePickerController'
+   s.dependency 'CWStatusBarNotification'
+   s.dependency 'TXIMSDK_iOS'
+   s.dependency 'TXLiteAVSDK_Professional'
   
   # s.resource_bundles = {
   #   'LiveSDKAPP' => ['LiveSDKAPP/Assets/*.png']

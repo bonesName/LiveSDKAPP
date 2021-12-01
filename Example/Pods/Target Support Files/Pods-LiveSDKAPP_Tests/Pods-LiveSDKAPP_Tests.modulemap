@@ -1,0 +1,6 @@
+framework module Pods_LiveSDKAPP_Tests {
+  umbrella header "Pods-LiveSDKAPP_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
